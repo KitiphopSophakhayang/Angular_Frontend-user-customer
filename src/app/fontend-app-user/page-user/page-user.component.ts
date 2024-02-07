@@ -9,6 +9,8 @@ import { OrderService } from 'src/app/service/data.service';
 })
 export class PageUserComponent implements OnInit {
   orders: any[] = [];
+  searchText: any;
+
 //ส่วนที่เอาไว้Getออเดอร์มา
   constructor(private orderService: OrderService, private router: Router) { }
 

@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { PageUserComponent } from './fontend-app-user/page-user/page-user.component';
 import { PageUserBuyComponent } from './fontend-app-user/page-user-buy/page-user-buy.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PageUserComponent,
-    PageUserBuyComponent
+    PageUserBuyComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
