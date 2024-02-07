@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*ฟ้อน*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500&family=Noto+Sans:ital,wght@1,500&display=swap');
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+
+.responsive-text {
+  @apply sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+}
+
+.custom-background {
+    background-image: url('assets/image/imagebackground.png');
+    background-size: cover; /* ให้รูปภาพขยายเต็มพื้นที่ */
+    background-position: center; /* จัดตำแหน่งภาพให้ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ต้องการการทำซ้ำภาพ */
+  }
+  
+
+  .custom-background-top {
+    background-image: url('assets/image/imageFoodLogo.png');
+    background-size: cover; /* ให้รูปภาพขยายเต็มพื้นที่ */
+    background-position: center; /* จัดตำแหน่งภาพให้ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ต้องการการทำซ้ำภาพ */
+  }
