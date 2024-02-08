@@ -7,7 +7,8 @@ import { PageUserComponent } from './fontend-app-user/page-user/page-user.compon
 import { PageUserBuyComponent } from './fontend-app-user/page-user-buy/page-user-buy.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './filter.pipe';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PageUserAllmenuComponent } from './fontend-app-user/page-user-allmenu/page-user-allmenu.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PageUserComponent,
     PageUserBuyComponent,
     FilterPipe,
+    PageUserAllmenuComponent,
   ],
   imports: [
     BrowserModule,
